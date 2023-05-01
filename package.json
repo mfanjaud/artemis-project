@@ -23,5 +23,8 @@
 	"bugs": {
 		"url": "https://github.com/mfanjaud/artemis-project/issues"
 	},
-	"homepage": "https://github.com/mfanjaud/artemis-project#readme"
+	"homepage": "https://github.com/mfanjaud/artemis-project#readme",
+	"devDependencies": {
+		"supertest": "^6.3.3"
+	}
 }
