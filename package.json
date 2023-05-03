@@ -11,7 +11,8 @@
 		"client": "npm start --prefix client",
 		"watch": "npm run server & npm run client",
 		"deploy": "npm run build --prefix client && npm start --prefix server",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+		"test": "npm test --prefix server && npm test --prefix client"
 	},
 	"repository": {
 		"type": "git",
@@ -26,5 +27,8 @@
 	"homepage": "https://github.com/mfanjaud/artemis-project#readme",
 	"devDependencies": {
 		"supertest": "^6.3.3"
+	},
+	"dependencies": {
+		"mongoose": "^7.1.0"
 	}
 }
